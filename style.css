@@ -1,0 +1,135 @@
+/* --- Basic Layout ---  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Krub', sans-serif;
+}
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    background-color: #5995DA;
+    height: 80px;
+}
+
+.header {
+    background-color: #B2D6FF;
+}
+
+.content {
+    background-color: #EAEDF0;
+    height: 600px;
+}
+
+.contact {
+    background-color: #D6E9FE;
+}
+
+.feature-1 {
+    background-color: #F5CF8E;
+}
+
+.feature-2 {
+    background-color: #F09A9D;
+}
+
+.feature-3 {
+    background-color: #C8C6FA;
+}
+
+/* --- Cards --- */
+
+.card1 {
+    background-image: url('img/Frederic Edwin Church_Cotopaxi.jpg');
+
+}
+
+.card {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.card:hover {
+     // box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 5px grey;
+}
+
+a.div-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    /* Makes sure the link doesn't get underlined */
+    z-index: 10;
+    /* raises anchor tag above everything else in div */
+    background-color: white;
+    /*workaround to make clickable in IE */
+    opacity: 0;
+    /*workaround to make clickable in IE */
+    filter: alpha(opacity=0);
+    /*workaround to make clickable in IE */
+}
+
+.card-caption {
+    padding: 2px 16px;
+    text-decoration-color: #EAEDF0;
+}
+
+/* --- Responsive --- */
+
+/* Mobile */
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: #F09A9D; /* Red */
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 601px) and (max-width: 960px) {
+    .contact,
+    .card,
+    .feature-1,
+    .feature-2,
+    .feature-3 {
+        width: 50%;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 961px) {
+    .page {
+        width: 960px;
+        margin: 0 auto;
+    }
+
+    .card,
+    .feature-1,
+    .feature-2,
+    .feature-3 {
+        width: 33.3%;
+    }
+
+    .header {
+        height: 400px;
+    }
+}
