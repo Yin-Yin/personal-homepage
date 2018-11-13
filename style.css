@@ -4,13 +4,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Krub', sans-serif;
+    font-family: 'Space Mono', monospace;
+//font-family: 'Krub', sans-serif;
 }
 
 .page {
     display: flex;
     flex-wrap: wrap;
-    background-color: white;
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
 }
 
 .section {
@@ -22,31 +26,42 @@
 }
 
 .menu {
-    background-color: #5995DA;
-    height: 80px;
+/ / background-color: #EAEDF0;
+    height: 40px;
+    border-bottom: 1px grey solid;
 }
 
 .header {
-    background-color: #B2D6FF;
+/ / background-color: #1551a5;
+    height: 100px;
+    font-family: 'Press Start 2P', cursive;
 }
 
 .content {
-    background-color: #EAEDF0;
+/ / background-color: #EAEDF0;
     height: 600px;
 }
 
 .contact {
-    background-color: #D6E9FE;
+/ / background-color: lightgrey;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .footer {
     height: 60px;
+    border-top: 1px gray solid;
 }
 
 /* --- Input Form  */
 
 .contact-form {
     width: 300px;
+}
+
+.contact-caption {
+    margin-bottom: 8px;
+    font-weight: bolder;
 }
 
 .form-input {
@@ -95,6 +110,41 @@
     opacity: 1;
 }
 
+.glow {
+/ / font-size: 80 px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    /*Set our animation play state to paused initially */
+    animation-play-state: paused;
+}
+
+.glow:hover {
+    /* Toggle our animation play state to running when we are hovering over our sticker */
+    animation-play-state: running;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
+.card-caption {
+    padding: 2px 16px;
+    background-color: #EAEDF0;
+    opacity: 0.8;
+    color: gray;
+    font-weight: bolder;
+    box-shadow: 0 0 15px whitesmoke;
+/ / border-radius: 0 px;
+}
+
 /* make the whole div clickable*/
 a.div-link {
     position: absolute;
@@ -112,16 +162,6 @@ a.div-link {
     /*workaround to make clickable in IE */
     filter: alpha(opacity=0);
     /*workaround to make clickable in IE */
-}
-
-.card-caption {
-    padding: 2px 16px;
-    background-color: #EAEDF0;
-    opacity: 0.8;
-    color: gray;
-    font-weight: bolder;
-    box-shadow: 0 0 15px whitesmoke;
-/ / border-radius: 0 px;
 }
 
 /* --- Responsive --- */
@@ -214,7 +254,9 @@ a.div-link {
 
     .page {
         width: 960px;
-        margin: 0 auto;;
+        margin: 0 auto;
+        background-color: white;
+        border-radius: 15px;
     }
 
     .contact {
