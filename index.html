@@ -17,18 +17,22 @@
         <p>I like turtles.</p>
     </div>
     <div class='section contact'>
-        <form name="contact" method="POST" netlify>
+        <form class="contact-form" name="contact" method="POST" netlify>
+            <p>Contact me :)</p>
             <p>
-                <label>Your Name: <input type="text" name="name"/></label>
+                <label>Your Name: <input type="text" name="name" class="form-input"
+                                         placeholder="Your Name"/></label>
             </p>
             <p>
-                <label>Your Email: <input type="email" name="email"/></label>
+                <label>Your Email: <input type="email" name="email" class="form-input"
+                                          placeholder="Your Email"/></label>
             </p>
             <p>
-                <label>Message: <textarea name="message"></textarea></label>
+                <label>Your Message: <textarea name="message" class="form-input"
+                                               placeholder="I am happy to hear from you... :)"></textarea></label>
             </p>
             <p>
-                <button type="submit">Send</button>
+                <button type="submit" class="form-button">Send</button>
             </p>
         </form>
     </div>
@@ -39,11 +43,25 @@
             <p>Explore new art styles.</p>
         </div>
     </div>
-    <div class='section feature-2'>
-        Festure 2
+    <div class='section card card2'>
+        <a class="div-link" href="https://artexplorer.netlify.com/" title="Click to visit Art Explorer">Art Explorer</a>
+        <div class="card-caption">
+            <h4><b>Art Explorer</b></h4>
+            <p>Explore new art styles.</p>
+        </div>
     </div>
-    <div class='section feature-3'>
-        Feature 3
+    <div class='section card card3'>
+        <a class="div-link" href="https://artexplorer.netlify.com/" title="Click to visit Art Explorer">Art Explorer</a>
+        <div class="card-caption">
+            <h4><b>Art Explorer</b></h4>
+            <p>Explore new art styles.</p>
+        </div>
+    </div>
+    <div class='section footer'>
+        <p>
+            Made with <a title="html9responsiveboilerstrapjs" href="http://html9responsiveboilerstrapjs.com/">H9RBS</a>.
+            Find the code on <a href="https://github.com/Yin-Yin/personal-homepage">Github</a>.
+        </p>
     </div>
 </div>
 </body>

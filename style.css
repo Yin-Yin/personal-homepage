@@ -10,6 +10,7 @@
 .page {
     display: flex;
     flex-wrap: wrap;
+    background-color: white;
 }
 
 .section {
@@ -50,11 +51,43 @@
     background-color: #C8C6FA;
 }
 
+.footer {
+    height: 60px;
+}
+
+/* --- Input Form  */
+
+.contact-form {
+    width: 300px;
+}
+
+.form-input {
+    border-radius: 4px;
+    padding: 4px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.form-button {
+    color: white;
+    background-color: #5995DA;
+    height: 35px;
+    width: 100%;
+}
+
 /* --- Cards --- */
 
 .card1 {
-    background-image: url('img/Frederic Edwin Church_Cotopaxi.jpg');
+    background-image: url('img/starry-night-s.jpg');
+}
 
+.card2 {
+    background-image: url('img/cloud-1.jpg');
+}
+
+.card3 {
+    background-image: url('img/code-s.jpg');
 }
 
 .card {
@@ -65,13 +98,16 @@
 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
+    opacity: 0.7;
 }
 
 .card:hover {
-     // box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0 5px grey;
+    // box-shadow: 0 8 px 16 px 0 rgba(0, 0, 0, 0.2);
+    // box-shadow: 0 0 5px grey;
+    opacity: 1;
 }
 
+/* make the whole div clickable*/
 a.div-link {
     position: absolute;
     width: 100%;
@@ -92,7 +128,12 @@ a.div-link {
 
 .card-caption {
     padding: 2px 16px;
-    text-decoration-color: #EAEDF0;
+    background-color: #EAEDF0;
+    opacity: 0.8;
+    color: gray;
+    font-weight: bolder;
+    box-shadow: 0 0 15px whitesmoke;
+    //border-radius: 0px;
 }
 
 /* --- Responsive --- */
@@ -106,7 +147,6 @@ a.div-link {
 
 /* Tablet */
 @media only screen and (min-width: 601px) and (max-width: 960px) {
-    .contact,
     .card,
     .feature-1,
     .feature-2,
@@ -117,6 +157,15 @@ a.div-link {
 
 /* Desktop */
 @media only screen and (min-width: 961px) {
+    body {
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f1da36+-1,5195e8+41,5195e8+41,1978e5+98 */
+        background: #f1da36; /* Old browsers */
+        background: -moz-linear-gradient(top, #f1da36 -1%, #5195e8 41%, #5195e8 41%, #1978e5 98%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #f1da36 -1%,#5195e8 41%,#5195e8 41%,#1978e5 98%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #f1da36 -1%,#5195e8 41%,#5195e8 41%,#1978e5 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1da36', endColorstr='#1978e5',GradientType=0 ); /* IE6-9 */
+    }
+
     .page {
         width: 960px;
         margin: 0 auto;
