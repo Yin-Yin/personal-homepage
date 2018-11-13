@@ -11,4 +11,4 @@ Here is some inspiration I got for this site:
 [Great resource for responsive web design](https://internetingishard.com/html-and-css/responsive-design/)
 {make css gradients](http://www.colorzilla.com/gradient-editor/)
 {convert scss to css}(https://www.cssportal.com/scss-to-css/)
-[starry sky](https://codepen.io/angiebadfox/pen/RRdQAb)
+[starry sky](https://codepen.io/angiebadfox/pen/RRdQAb)  
