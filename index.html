@@ -5,7 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
     <title>Valentins Homepage</title>
     <link rel='stylesheet' href='style.css'/>
-    <link href="https://fonts.googleapis.com/css?family=Krub|Press+Start+2P|Space+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Space+Mono" rel="stylesheet">
 </head>
 <body>
 <div class="stars small"></div>
@@ -13,33 +13,39 @@
 <div class="stars large"></div>
 <div class='page'>
     <div class='section menu'>
-        <a >Linked In</a>
+        <p></p><a>Blog </a> | <a href="#projects">Projects </a> | <a href="#contact">Contact</a></p>
     </div>
     <div class='section header'>
         <h1>About me</h1>
     </div>
     <div class='section content'>
-        <p>I like turtles.</p>
+
+        <img src="https://66.media.tumblr.com/f6395bca7a86e8efa6807271b64fb7f4/tumblr_p4jpsnKZQu1qze3hdo1_500.gif">
     </div>
     <div class='section contact'>
+        <a name="contact"></a>
         <form class="contact-form" name="contact" method="POST" netlify>
-            <p class="contact-caption glow">Contact me :)</p>
+            <p class="contact-caption">Contact me :)</p>
             <p>
                 <label>Your Name: <input type="text" name="name" class="form-input"
-                                         placeholder="..."/></label>
+                                         placeholder="Nice to meet you. :)"/></label>
             </p>
             <p>
                 <label>Your Email: <input type="email" name="email" class="form-input"
-                                          placeholder="..."/></label>
+                                          placeholder="Leave your Email so that I can reply to you."/></label>
             </p>
             <p>
                 <label>Your Message: <textarea name="message" class="form-input"
-                                               placeholder="Input your message here."></textarea></label>
+                                               placeholder="I am happy to hear from you. :)"></textarea></label>
             </p>
             <p>
                 <button type="submit" class="form-button">Send</button>
             </p>
         </form>
+    </div>
+    <div class='section section-heading'>
+        <a name="projects"></a>
+        <h2>Projects</h2>
     </div>
     <div class='section card card1'>
         <a class="div-link" href="https://artexplorer.netlify.com/" title="Click to visit Art Explorer">Art Explorer</a>
@@ -50,7 +56,7 @@
     </div>
     <div class='section card card2'>
         <a class="div-link" href="https://artexplorer.netlify.com/" title="Click to visit Art Explorer">Art Explorer</a>
-        <div class="glow">
+        <div class="card-caption">
             <h4><b>Art Explorer</b></h4>
             <p>Explore new art styles.</p>
         </div>
@@ -65,7 +71,8 @@
     <div class='section footer'>
         <p>
             Made with <a title=";D" href="http://html9responsiveboilerstrapjs.com/">H9RBS</a>.
-            Find the code on <a title="github.com/Yin-Yin/personal-homepage" href="https://github.com/Yin-Yin/personal-homepage">Github</a>.
+            View the code on <a title="github.com/Yin-Yin/personal-homepage"
+                                href="https://github.com/Yin-Yin/personal-homepage">Github</a>.
         </p>
     </div>
 </div>

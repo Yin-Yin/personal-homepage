@@ -5,7 +5,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Space Mono', monospace;
-//font-family: 'Krub', sans-serif;
 }
 
 .page {
@@ -17,6 +16,18 @@ h1 {
     font-family: 'Press Start 2P', cursive;
 }
 
+h2 {
+    font-family: 'Press Start 2P', cursive;
+}
+
+h3 {
+    font-family: 'Press Start 2P', cursive;
+}
+
+h4 {
+    font-family: 'Press Start 2P', cursive;
+}
+
 .section {
     width: 100%;
     height: 300px;
@@ -25,27 +36,28 @@ h1 {
     align-items: center;
 }
 
+.section-heading {
+    height: 60px;
+    margin-bottom: 20px;
+}
+
 .menu {
-/ / background-color: #EAEDF0;
-    height: 40px;
+    height: 60px;
     border-bottom: 1px grey solid;
 }
 
 .header {
-/ / background-color: #1551a5;
     height: 100px;
     font-family: 'Press Start 2P', cursive;
 }
 
 .content {
-/ / background-color: #EAEDF0;
     height: 600px;
 }
 
 .contact {
-/ / background-color: lightgrey;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 .footer {
@@ -99,50 +111,17 @@ h1 {
     background-repeat: no-repeat;
     position: relative;
 
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
     opacity: 0.7;
 }
 
 .card:hover {
-/ / box-shadow: 0 8 px 16 px 0 rgba(0, 0, 0, 0.2);
-/ / box-shadow: 0 0 5 px grey;
     opacity: 1;
 }
 
-.glow {
-/ / font-size: 80 px;
-    color: #fff;
-    text-align: center;
-    -webkit-animation: glow 1s ease-in-out infinite alternate;
-    -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: glow 1s ease-in-out infinite alternate;
-    /*Set our animation play state to paused initially */
-    animation-play-state: paused;
-}
-
-.glow:hover {
-    /* Toggle our animation play state to running when we are hovering over our sticker */
-    animation-play-state: running;
-}
-
-@-webkit-keyframes glow {
-    from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-    }
-    to {
-        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-    }
-}
-
 .card-caption {
-    padding: 2px 16px;
-    background-color: #EAEDF0;
-    opacity: 0.8;
-    color: gray;
     font-weight: bolder;
-    box-shadow: 0 0 15px whitesmoke;
-/ / border-radius: 0 px;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
 }
 
 /* make the whole div clickable*/
@@ -168,9 +147,7 @@ a.div-link {
 
 /* Mobile */
 @media only screen and (max-width: 600px) {
-    body {
-        background-color: #F09A9D; /* Red */
-    }
+    /* mobile styles */
 }
 
 /* Tablet */
