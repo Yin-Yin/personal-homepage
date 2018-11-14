@@ -23,6 +23,10 @@ h4 {
     font-family: 'Press Start 2P', cursive;
 }
 
+textarea{
+    height: 80px;
+}
+
 .page {
     display: flex;
     flex-wrap: wrap;
@@ -30,7 +34,6 @@ h4 {
 
 .section {
     width: 100%;
-    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,15 +56,12 @@ h4 {
     color: white;
 }
 
-.header-stars {
-/ / justify-content: start;
-}
-
 .content {
     height: 600px;
 }
 
 .contact {
+    height: 300px;
     margin-top: 60px;
     margin-bottom: 60px;
 }
@@ -113,6 +113,7 @@ h4 {
 }
 
 .card {
+    height: 200px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -215,7 +216,6 @@ a.div-link {
 
 /* Mobile */
 @media only screen and (max-width: 600px) {
-    /* mobile styles */
     .background-stars {
         display: none;
     }
@@ -236,10 +236,6 @@ a.div-link {
 
 /* Tablet */
 @media only screen and (min-width: 601px) and (max-width: 960px) {
-    .card {
-        width: 50%;
-    }
-
     .background-stars {
         display: none;
     }
@@ -257,6 +253,9 @@ a.div-link {
         color: white;
     }
 
+    .card {
+        width: 50%;
+    }
 }
 
 /* Desktop */
@@ -291,23 +290,14 @@ a.div-link {
         align-items: center;
     }
 
-    .contact {
-        order: 2;
-    }
-
     .card {
         width: 33.3%;
-        order: 1;
 
         opacity: 0.7;
     }
 
     .card:hover {
         opacity: 1;
-    }
-
-    .footer {
-        order: 3;
     }
 
 }
