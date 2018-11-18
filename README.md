@@ -1,6 +1,6 @@
 # personal-homepage - Starry Night
 
-See the site here: [Demo on Netlify](https://pensive-kepler-66179f.netlify.com/)
+See the site here: [Demo on Netlify](https://starry-sky-personal-homepage.netlify.com/)
 
 I am using the [HTML9 Responsive Boilerstrap JS](http://html9responsiveboilerstrapjs.com/) for this website! It`s cross-universe compatible!! How awesome is that?!!!?!! You should definetly check it out!
 
@@ -14,7 +14,7 @@ The motivation behind the design was that I wanted to convey a calmness that I v
  - [make css gradients](http://www.colorzilla.com/gradient-editor/)
  - [convert scss to css](https://www.cssportal.com/scss-to-css/)
  - [Great resource for responsive web design](https://internetingishard.com/html-and-css/responsive-design/)
- - [CSS starr](https://codepen.io/angiebadfox/pen/RRdQAb)
+ - [CSS star effect](https://codepen.io/angiebadfox/pen/RRdQAb)
 
 ### Other cool things I came across while making:
  - {cool glowing text](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_glowing_text)
